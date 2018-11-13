@@ -16,8 +16,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: dodgerblue;
-	outline-color:aliceblue;
+	outline-color:steelblue;
 	outline-style:outset;
+	position:sticky;
+    top: 0;
+    width: 100%;
 }
 
 li {
@@ -30,9 +33,16 @@ li a {
     text-align: center;
     padding: 18px 20px;
     text-decoration:none;
+	border-right: 1px solid aliceblue;
 }
 
 li a:hover {
     background-color:deepskyblue;
 }
 
+iframe {
+	position:sticky;
+	/*border:none;*/
+	height:700px;
+	width:100%;
+}
