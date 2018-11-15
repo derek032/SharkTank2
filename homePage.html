@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Dress
+        </title>
+        <style>
+        body{
+  background: url(/images/classy_fabric.png);
+  
+}
+.preview{
+  width: 700px;
+  height: auto;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 5px 5px;
+  background-size: 225px 70px;
+  position: relative;
+  float: right;
+  display: inline;
+  top: 0;
+  border-radius: 3px;
+  z-index: 99999;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000;
+}
+
+input[type='radio']:hover{
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);    
+}
+
+.red{
+  background: red;
+}
+
+.red:checked{
+  background: linear-gradient(brown, red)
+}
+
+.green{
+  background: green;
+}
+
+.green:checked{
+  background: linear-gradient(green, lime);
+}
+
+.yellow{
+  background: yellow;
+}
+
+.yellow:checked{
+  background: linear-gradient(orange, yellow);
+}
+
+.purple{
+  background: purple;
+}
+
+.pink{
+  background: pink;
+}
+
+.purple:checked{
+  background: linear-gradient(purple, violet);
+}
+
+.red:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 red);
+  filter: opacity(.5) drop-shadow(0 0 0 red);
+}
+
+.green:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 green);
+  filter: opacity(.5) drop-shadow(0 0 0 green);
+}
+
+.yellow:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 yellow);
+  filter: opacity(.5) drop-shadow(0 0 0 yellow);
+}
+
+.purple:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 purple);
+  filter: opacity(.5) drop-shadow(0 0 0 purple);
+}
+
+.pink:checked ~ img{
+  -webkit-filter: opacity(.5) drop-shadow(0 0 0 pink);
+  filter: opacity(.5) drop-shadow(0 0 0 pink);
+}
+
+
+img{
+  width: 100%;
+  position: relative;
+}
+
+.label{
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top: 1200%;
+  margin-left: 130px;
+}
+
+
+::selection{
+  background: #000;
+}</style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+
+       <center> <div id="main" style="width:20%;">
+            <div class="preview">
+                <input class='red' name='color' type='radio' />
+                <input class='green' name='color' type='radio' />
+                  <input class='pink' name='color' type='radio' />
+                <input checked class='yellow' name='color' type='radio' />
+                <input class='purple' name='color' type='radio' />  
+<img src="test.png">
+        </div>
+        </div></center>
+    </body>
+</html>
