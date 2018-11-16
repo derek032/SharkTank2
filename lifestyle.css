@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
 html {
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
@@ -15,12 +14,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: dodgerblue;
-	outline-color:steelblue;
+    background-color: #ac7339;
+	outline-color:aliceblue;
 	outline-style:outset;
-	position:sticky;
-    top: 0;
-    width: 100%;
 }
 
 li {
@@ -33,16 +29,40 @@ li a {
     text-align: center;
     padding: 18px 20px;
     text-decoration:none;
-	border-right: 1px solid aliceblue;
 }
 
 li a:hover {
-    background-color:deepskyblue;
+    background-color:#d2a679;
 }
 
-iframe {
-	position:sticky;
-	/*border:none;*/
-	height:700px;
-	width:100%;
+/*Banner and Content*/
+#Banner {
+	width: 80%;
+	height: 220px;
+
+	
+}
+#names {
+	float: right;
+	font-size: 12px	
+}
+@keyframes bgcolor {
+    0%   {
+        background-color: rgba(154,205,255,1.00);
+    } 
+	25% {
+		background-color: rgba(88,172,255,0.93);
+	}
+	50% {
+        background-color: rgba(30,144,255,0.87);
+    }
+	75% {
+		background-color: rgba(30,144,255,1.00);
+	}
+	100% {
+		background-color: rgba(30,144,255,0.84);
+	}
+}
+body {
+	background-color:beige;
 }
