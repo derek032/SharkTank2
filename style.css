@@ -1,0 +1,153 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #111;
+    margin: 15px;
+   
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+p{
+    color: white;
+}
+
+#uno{
+    width: 50%;
+    background-color: antiquewhite;
+    border-width: 5px;
+    border-style: solid;
+    float: right;
+    border-radius: 15px;
+
+}
+#uno1{
+    width: 50%;
+    background-color: antiquewhite;
+    border-right-color: black;
+    border-width: 5px;
+    border-style: solid;
+    float: left;
+    position: absolute;
+    border-radius: 15px;
+
+}
+img:hover {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    
+}
+
+#ai{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Spicy Rice', cursive;
+    position: relative;
+    text-decoration: underline;
+}
+.text {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+  }
+  
+  }
+  .overlayuno {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+   
+  }
+  .text1 {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 56%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+  }
+  img{
+      border-width: 2px;
+      border-style: solid;
+      border-color:black;
+      border-radius: 15px;
+  }
+  h1{
+      color:white;
+      text-align: center;
+      position: static;
+      font-size: 55px;
+      font-family: 'Monoton', cursive;
+      z-index: 1;
+  }
